@@ -32,4 +32,5 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 model.fit( np.array(x데이터),  np.array(y데이터), epochs=10)
 
 # 예측
-model.predict( [],[] )
+predict = model.predict( [[750, 3.70, 3],[400, 2.2, 1] ])
+print(predict)
